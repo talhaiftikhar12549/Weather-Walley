@@ -1,7 +1,7 @@
 <template>
 
-    <div class="flex w-[100%]" >
-      <div class="w-[50%]  h-[70vh] relative">
+    <div class="flex flex-col md:flex-row  w-[100%]" >
+      <div class="md:w-[50%] w-[100%]]  h-[70vh] relative">
 
         <MapShow/>
 
@@ -9,7 +9,7 @@
       </div>
 
 
-      <div class="w-[50%] border h-[70vh] flex justify-center relative ">
+      <div class="w-[50%] hidden md:block border h-[70vh] flex justify-center relative ">
         <p class="text-3xl bold pt-2">
           Weekly Updates
         </p>
@@ -18,6 +18,7 @@
              class="h-[100%] w-[100%] absolute">
 
       </div>
+
     </div>
 
 </template>
