@@ -3,16 +3,19 @@
     <div class="border  rounded-lg shadow-lg w-[85%] p-8">
 
       <div class="w-[100%]">
-        <div class=" flex justify-center text-3xl font-bold">Weekly Updates of
+        <div class=" flex justify-center text-3xl font-bold">
+          <div>
+          <p class="hidden md:block">Weekly Updates of</p>
           <!--          {{ this.city.length === 0 ? "Islamabad" : this.city }}-->
           {{ this.city.length === 0 ? "Islamabad" : this.$store.state.city }}
+          </div>
         </div>
-        <div class="py-4"><p class="text-2xl flex justify-center ">Stay One Step Ahead with Our Comprehensive Weather
+        <div class="py-4"><p class="text-2xl flex justify-center hidden md:block ">Stay One Step Ahead with Our Comprehensive Weather
           Forecasts – Know What's Coming Your Way</p></div>
       </div>
       <ul>
         <li v-for="(item, index) in apidata" :key="item.dt" class="my-4 ">
-          <div class="border-4 border-[#ACD4F7] rounded-lg shadow-lg py-5">
+          <div class="border-4 border-[#ACD4F7] rounded-lg shadow-lg py-5 px-4 ">
             <div class="w-[100%] flex justify-center"><p class="font-bold text-2xl ">{{ dayGetter(index) }}</p></div>
             <div class="flex w-[100%]">
               <div class="w-[90%] pt-4">
