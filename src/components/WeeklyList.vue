@@ -1,6 +1,6 @@
 <template>
   <div class="max-w-[100%]  p-4 flex justify-center my-8">
-    <div class="border  rounded-lg shadow-lg w-[85%] p-8">
+    <div class="border  rounded-lg shadow-lg w-[90%]] md:w-[85%] p-8">
 
       <div class="w-[100%]">
         <div class=" flex justify-center text-3xl font-bold">
@@ -15,15 +15,15 @@
       </div>
       <ul>
         <li v-for="(item, index) in apidata" :key="item.dt" class="my-4 ">
-          <div class="border-4 border-[#ACD4F7] rounded-lg shadow-lg py-5 px-4 ">
+          <div class="border-4 border-[#ACD4F7] rounded-lg shadow-lg py-5 px-2 ">
             <div class="w-[100%] flex justify-center"><p class="font-bold text-2xl ">{{ dayGetter(index) }}</p></div>
             <div class="flex w-[100%]">
-              <div class="w-[90%] pt-4">
+              <div class="w-[80%]  md:w-[90%] pt-4">
                 <p class="font-[400] text-xl font-bold">Daily Report : </p>
-                <div class="flex justify-around py-4">
-                  <div>
+                <div class="flex-col md:flex md:flex-row justify-around py-4">
+                  <div class="">
                     <p class="font-[400] text-xl">Weather: {{ item.weather[0].main }}</p>
-                    <p class="font-[400] pt-1 text-xl">Description: {{ item.weather[0].description }}</p>
+                    <p class="font-[400] pt-1 text-xl hidden md:inline-block">Description: {{ item.weather[0].description }}</p>
                   </div>
                   <div class="">
                     <p class="font-[400] text-xl">Humidity: {{ item.main.humidity }}</p>
@@ -33,7 +33,7 @@
 
 
               </div>
-              <div class="w-[10%]">
+              <div class="w-auto">
                 <img width="100%" height="100%" :src="`https://openweathermap.org/img/wn/${item.weather[0].icon}@2x.png`"
                      alt="Weather Icon">
               </div>
