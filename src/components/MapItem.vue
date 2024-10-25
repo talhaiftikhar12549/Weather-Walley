@@ -11,6 +11,7 @@
       />
       <button
           @click="searchCity"
+          @touchstart="searchCity"
           class="bg-[#79A3FF] text-white p-2 rounded ml-2"
       >
         Search

@@ -2,9 +2,10 @@
   <div class=" w-[100%] h-[95vh] ">
 
 
-    <div class="w-[100%]  md:h-[70vh] h-[60vh]   px-2 flex justify-center relative "><img src="../assets/WeatherForcast.svg"
-                                                                          alt="Vue logo"
-                                                                          class="h-[100%] w-[100%]  absolute">
+    <div class="w-[100%]  md:h-[70vh] h-[50%]   px-2 flex justify-center relative "><img
+        src="../assets/WeatherForcast.svg"
+        alt="Vue logo"
+        class="h-[100%] w-[100%]  absolute">
 
 
     </div>
