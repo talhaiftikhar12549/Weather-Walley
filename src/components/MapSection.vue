@@ -9,7 +9,7 @@
       </div>
 
 
-      <div class="w-[50%] hidden md:block border h-[70vh] flex justify-center relative ">
+      <div class="w-[50%] hidden md:flex md:flex-row border h-[70vh] flex justify-center relative ">
         <p class="text-3xl bold pt-2">
           Weekly Updates
         </p>

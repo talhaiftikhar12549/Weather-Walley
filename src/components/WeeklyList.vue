@@ -5,7 +5,7 @@
       <div class="w-[100%]">
         <div class=" flex justify-center text-3xl font-bold">
           <div>
-          <p class="hidden md:block">Weekly Updates of</p>
+          <p class="hidden md:inline-block">Weekly Updates of</p>
           <!--          {{ this.city.length === 0 ? "Islamabad" : this.city }}-->
           {{ this.city.length === 0 ? "Islamabad" : this.$store.state.city }}
           </div>
