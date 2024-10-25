@@ -1,9 +1,9 @@
 <template>
   <div className="md:w-[50%] w-[100%] flex items-center justify-center text-center">
 
-    <div className="w-[70%]"><p className="text-4xl font-black text-[#98C3ED]  pb-4">Report Bug</p>
+    <div className="w-[80%] md:w-[70%]"><p className="text-4xl font-black text-[#98C3ED]  pb-4">Report Bug</p>
 
-      <form className=" mx-auto p-4 border rounded-lg shadow-lg px-12 py-12" @submit.prevent="handleSubmit">
+      <form className=" mx-auto p-4 border rounded-lg shadow-lg md:px-12 px-4 py-12" @submit.prevent="handleSubmit">
         <div className="mb-4">
 
           <input
