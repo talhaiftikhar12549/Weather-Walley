@@ -1,5 +1,5 @@
 <template>
-  <div className="w-[50%] flex items-center justify-center text-center">
+  <div className="md:w-[50%] w-[100%] flex items-center justify-center text-center">
 
     <div className="w-[70%]"><p className="text-4xl font-black text-[#98C3ED]  pb-4">Report Bug</p>
 

@@ -6,7 +6,7 @@
       <ContactUsForm/>
       <!--        form end-->
       <!--      image-->
-      <div class="w-1/2 h-[70vh] flex justify-center relative">
+      <div class="w-1/2 h-[70vh] md:flex md:flex-row justify-center relative hidden">
         <img src="../assets/13429921_5255892.svg"
              alt="Vue logo"
              class="h-full w-full absolute">

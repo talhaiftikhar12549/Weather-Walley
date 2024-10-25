@@ -34,7 +34,7 @@
 
               </div>
               <div class="w-[10%]">
-                <img width="100%" height="100%" :src="`http://openweathermap.org/img/wn/${item.weather[0].icon}@2x.png`"
+                <img width="100%" height="100%" :src="`https://openweathermap.org/img/wn/${item.weather[0].icon}@2x.png`"
                      alt="Weather Icon">
               </div>
             </div>
@@ -86,7 +86,7 @@ export default
         const latd = this.$store.state.lat
         const apikey = import.meta.env.VITE_WEATHER_KEY
         console.log(latd, lond)
-        const res = await axios.get(`http://api.openweathermap.org/data/2.5/forecast?appid=${apikey}&lat=${latd}&lon=${lond}&cnt=7&units=metric&lang=en`)
+        const res = await axios.get(`https://api.openweathermap.org/data/2.5/forecast?appid=${apikey}&lat=${latd}&lon=${lond}&cnt=7&units=metric&lang=en`)
         // .catch(err => {
         //   console.log(err.status === '1002')
         // });
