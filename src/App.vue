@@ -1,9 +1,10 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-
+// import hearImage from "../"
 </script>
 
 <template>
+
   <header>
 
     <div>
@@ -52,6 +53,21 @@ import { RouterLink, RouterView } from 'vue-router'
 
     </div>
   </header>
+
   <RouterView />
+
+  <footer>
+    
+    <div class="border-t-2 border-[#acd4f7] py-4 lg:py-8 shadow-2xl flex flex-col justify-center items-center">
+      
+      <div class="font-bold lg:text-lg py-1 flex"><p>Developed with</p>
+        <img className="px-2" src="@/assets/heart.png" alt="" />
+      </div>
+
+      <div class="font-bold lg:text-lg">&#169; All Rights Reserved</div>
+    
+    </div>
+  
+  </footer>
 
 </template>
