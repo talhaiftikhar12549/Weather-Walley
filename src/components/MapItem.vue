@@ -53,7 +53,7 @@ export default {
     async searchCity() {
       const apiKey = import.meta.env.VITE_API_KEY;
 
-      const response = await axios.get(`http://api.openweathermap.org/geo/1.0/direct?q=${this.city}&limit=1&appid=${apiKey}`);
+      const response = await axios.get(`https://api.openweathermap.org/geo/1.0/direct?q=${this.city}&limit=1&appid=${apiKey}`);
       const data = response.data
       if (data.length > 0) {
         store.commit('increment', {t: data[0].lat, n: data[0].lon})
